@@ -1,13 +1,13 @@
-package com.mcsqna.progressview;
+package com.mcsqnxa.progressview;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
 
-public class MainActivity extends AppCompatActivity implements Runnable {
+public class MainActivity extends Activity implements Runnable {
     private com.mcsqnxa.android.ProgressView cpu;
 
 
@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements Runnable {
             }
         }
     }
-
 
 
 }
