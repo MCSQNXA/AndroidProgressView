@@ -12,7 +12,7 @@
             android:id="@+id/main_activity_refresh"
             android:layout_margin="10dp"/>
 
-    <com.mcsqnxa.android.ProgressView
+    <mcsq.nxa.android.ProgressView
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:id="@+id/main_activity_cpu"

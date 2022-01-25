@@ -4,13 +4,12 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        applicationId "com.mcsqnxa.progressview"
-        minSdkVersion 23
+        applicationId "mcsq.nxa.progressview"
+        minSdkVersion 14
         targetSdkVersion 31
         versionCode 20211024
-        versionName "20211024"
+        versionName "20220126"
 
-//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {

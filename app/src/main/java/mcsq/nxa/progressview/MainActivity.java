@@ -1,4 +1,4 @@
-package com.mcsqnxa.progressview;
+package mcsq.nxa.progressview;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 public class MainActivity extends Activity implements Runnable {
-    private com.mcsqnxa.android.ProgressView cpu;
+    private mcsq.nxa.android.ProgressView cpu;
 
 
     @Override

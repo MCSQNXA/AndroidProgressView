@@ -1,8 +1,11 @@
-package com.mcsqnxa.android;
+package mcsq.nxa.android;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.*;
+import android.os.Build;
 import android.os.Looper;
 import android.util.AttributeSet;
 import android.view.View;
@@ -54,6 +57,7 @@ public class ProgressView extends View {
         this(context, attrs, defStyleAttr, 0);
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public ProgressView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
 
@@ -90,12 +94,12 @@ public class ProgressView extends View {
 
         if (this.info != null)//绘制文本
         {
-            Rect rect = new Rect();
+            @SuppressLint("DrawAllocation") Rect rect = new Rect();
             this.pinfo.getTextBounds(this.info, 0, this.info.length(), rect);
             canvas.drawText(this.info, centerX, centerY + rect.height() - 20, this.pinfo);
         }
 
-        RectF rectf = new RectF(
+        @SuppressLint("DrawAllocation") RectF rectf = new RectF(
                 this.strokeWith + 12,//当前view的x轴进行绘制
                 this.strokeWith + 12,//当前view的y轴进行绘制
                 super.getWidth() - this.strokeWith - 12,
